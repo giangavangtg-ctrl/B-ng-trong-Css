@@ -1,0 +1,63 @@
+/* Gộp các đường viền liền kề thành 1 nét duy nhất */
+table {
+    border-collapse: collapse;
+}
+
+/* Kẻ viền đen 1px cho bảng, tiêu đề và các ô dữ liệu */
+table, th, td {
+    border: 1px solid black;
+}
+/* Mở rộng bảng full màn hình */
+table {
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+/* Thêm khoảng không gian bên trong các ô để chữ không dính sát viền */
+th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/* Đặt chiều cao tối thiểu cho hàng tiêu đề */
+th {
+    height: 50px;
+}
+/* Thiết lập phông chữ cơ bản cho toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. Định dạng tổng thể bảng */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Bỏ đường viền kép */
+    margin-top: 20px;
+}
+
+/* 2. Định dạng viền và khoảng cách cho mọi ô */
+table, th, td {
+    border: 1px solid #dddddd; /* Viền xám nhạt cho tinh tế */
+}
+
+th, td {
+    padding: 15px; /* Khoảng cách chữ tới viền */
+}
+
+/* 3. Định dạng riêng cho hàng tiêu đề (th) */
+th {
+    background-color: #333333; /* Nền tối */
+    color: white;              /* Chữ trắng */
+    text-align: left;          /* Căn trái */
+    height: 50px;              /* Chiều cao */
+    vertical-align: middle;    /* Căn giữa theo chiều dọc */
+}
+
+/* 4. Định dạng riêng cho hàng dữ liệu (td) */
+td {
+    background-color: #f2f2f2; /* Nền xám nhạt */
+    color: #333333;            /* Chữ xám đậm */
+    height: 60px;
+    vertical-align: middle;    /* Căn giữa theo chiều dọc thay vì bottom để dễ nhìn hơn */
+}
